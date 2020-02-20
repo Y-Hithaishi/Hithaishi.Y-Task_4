@@ -1,0 +1,24 @@
+package Estimate;
+import java.util.*;
+public class Estimation {
+	public static void main(String[] arg)
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.format("standard\n above standard\n high standard\n high standard and fully automated\nenter standard : ");
+		String InputStandard=sc.nextLine();
+		System.out.format(" Area of house in square feet:");
+		double AreaOfHouse=w.nextDouble(),EstimatedCost;
+		if(InputStandard.equalsIgnoreCase("standard"))
+			Cost=AreaOfHouse*1200;
+		else if(InputStandard.equalsIgnoreCase("Above standard"))
+			Cost=AreaOfHouse*1500;
+		else if(InputStandard.equalsIgnoreCase("High standard"))
+			Cost=AreaOfHouse*1800;
+		else if(InputStandard.equalsIgnoreCase("High standard and fully automated")) 
+			Cost=AreaOfHouse*2500;
+		else
+			EstimatedCost=0;
+		System.out.format("cost is : %.2f",Cost);
+	}
+}
+© 2020 GitHub, Inc.
